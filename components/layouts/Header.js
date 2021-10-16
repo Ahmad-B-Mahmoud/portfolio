@@ -2,7 +2,7 @@ import { Grid, Typography } from '@mui/material'
 import Image from 'next/image'
 import profilePic from '../../images/me.png'
 import WorkTwoToneIcon from '@mui/icons-material/WorkTwoTone';
-
+import Social from '../Social';
 
 function Header() {
   return (
@@ -52,6 +52,7 @@ function Header() {
           >
             Hi, I am a Web Developer that develop websites and Web Applications.
           </Typography>
+          <Social />
         </Grid>
       </Grid>
     </>
