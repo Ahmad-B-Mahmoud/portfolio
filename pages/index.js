@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/layouts/Header'
 import Header from '../components/layouts/Main'
+import Header from '../components/layouts/Footer'
 import {prepr} from '../lib/prepr'
 
 export default function Home({ projects }) {
@@ -14,6 +15,7 @@ export default function Home({ projects }) {
       </Head>
       <Header />
       <Main projects={projects} />
+      <Footer />
     </div>
   )
 }
