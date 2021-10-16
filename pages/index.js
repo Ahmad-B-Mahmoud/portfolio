@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../components/layouts/Header'
+import Header from '../components/layouts/Main'
 import {prepr} from '../lib/prepr'
 
 export default function Home({ projects }) {
@@ -12,6 +13,7 @@ export default function Home({ projects }) {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <Header />
+      <Main projects={projects} />
     </div>
   )
 }
