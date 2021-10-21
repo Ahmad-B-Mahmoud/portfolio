@@ -1,10 +1,12 @@
 import { Container, IconButton } from '@mui/material'
 import { FacebookTwoTone, GitHub, LinkedIn } from '@mui/icons-material'
+import Contact from './Contact'
 
 function Social() {
   return (
     <>
       <Container maxWidth="sm" style={{textAlign: 'center'}}>
+        <Contact />
         <IconButton aria-label="my facebook" color="primary">
           <FacebookTwoTone sx={{fontSize: '2.5rem'}} />
         </IconButton>

@@ -35,6 +35,9 @@ a {
 * {
   box-sizing: border-box;
 }
+input, textarea { 
+  color: var(--blue) !important;
+}
 .text-shadow {
   text-shadow: 2px 2px 2px var(--dark);
 }
