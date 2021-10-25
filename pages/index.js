@@ -13,12 +13,12 @@ export default function Home({ projects }) {
         <meta name="description" content="My Personal Portfolio." />
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
-        <script src="https://www.momentcrm.com/embed"></script>
         <Script
+          id="moment"
           src="https://www.momentcrm.com/embed"
           strategy="beforeInteractive"
         />
-        <Script strategy="beforeInteractive">
+        <Script strategy="beforeInteractive" id="momentcrm">
           {`
           MomentCRM('init', {
             'teamVanityId': 'ahmad',
