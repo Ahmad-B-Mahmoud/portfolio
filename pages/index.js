@@ -15,11 +15,10 @@ export default function Home({ projects }) {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <Script
-          id="moment"
-          src="https://www.momentcrm.com/embed"
-          strategy="beforeInteractive"
-        />
-        <Script strategy="beforeInteractive" id="momentcrm">
+        id="moment"
+        src="https://www.momentcrm.com/embed"
+      />
+        <Script id="momentcrm">
           {
           MomentCRM('init', {
             'teamVanityId': 'ahmad',
