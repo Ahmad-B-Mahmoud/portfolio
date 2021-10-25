@@ -45,10 +45,10 @@ input, textarea {
   justify-content: center;
 }
 .glassmorph {
-  background: rgba( 31, 32, 65, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba(255, 200, 87, 0.37);
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
-  border-radius: 10px;
-  border: 1px solid rgba(255, 200, 87, 0.3);
+  background: rgba( 31, 32, 65, 0.25 ) !important;
+  box-shadow: 0 8px 32px 0 rgba(255, 200, 87, 0.37) !important;
+  backdrop-filter: blur( 4px ) !important;
+  -webkit-backdrop-filter: blur( 4px ) !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(255, 200, 87, 0.3) !important;
 }
