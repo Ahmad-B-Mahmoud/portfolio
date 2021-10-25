@@ -16,7 +16,7 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    let formData = new FormData(myForm)
+    let formData = new FormData(myForm.current)
     fetch('/', {
       method: 'POST',
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -49,7 +49,7 @@ function Contact() {
       >
         <DialogTitle color="primary" fontFamily="Merienda" fontSize="2rem"><EmailTwoTone sx={{fontSize: '2rem'}} /> Contact Me</DialogTitle>
         <DialogContent>
-          <form  ref={myForm} name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <form ref={myForm} name="contact" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="contact" />
             <Grid container>
               <Grid item md={6}>
