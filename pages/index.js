@@ -13,7 +13,8 @@ export default function Home({ projects }) {
         <meta name="description" content="My Personal Portfolio." />
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
-        <Script
+      </Head>
+      <Script
           id="moment"
           src="https://www.momentcrm.com/embed"
           strategy="beforeInteractive"
@@ -27,7 +28,6 @@ export default function Home({ projects }) {
           });
         `}
         </Script>
-      </Head>
       <Header />
       <Main projects={projects} />
     </div>
