@@ -17,15 +17,16 @@ export default function Home({ projects }) {
       <Script
         id="moment"
         src="https://www.momentcrm.com/embed"
+        strategy="beforeInteractive"
       />
         <Script id="momentcrm">
-          {
+          {`
           MomentCRM('init', {
             'teamVanityId': 'ahmad',
             'doChat': true,
             'doTracking': true,
           })
-        }
+        `}
         </Script>
       <Header />
       <Main projects={projects} />
