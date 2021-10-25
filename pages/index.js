@@ -20,13 +20,13 @@ export default function Home({ projects }) {
           strategy="beforeInteractive"
         />
         <Script strategy="beforeInteractive" id="momentcrm">
-          {`
+          {
           MomentCRM('init', {
             'teamVanityId': 'ahmad',
             'doChat': true,
             'doTracking': true,
-          });
-        `}
+          })
+        }
         </Script>
       <Header />
       <Main projects={projects} />
