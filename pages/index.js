@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../components/layouts/Header'
+import Script from 'next/script'
 import Main from '../components/layouts/Main'
 //import Footer from '../components/layouts/Footer'
 import {prepr} from '../lib/prepr'
@@ -12,6 +13,20 @@ export default function Home({ projects }) {
         <meta name="description" content="My Personal Portfolio." />
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <script src="https://www.momentcrm.com/embed"></script>
+        <Script
+          src="https://www.momentcrm.com/embed"
+          strategy="beforeInteractive"
+        />
+        <Script strategy="beforeInteractive">
+          {`
+          MomentCRM('init', {
+            'teamVanityId': 'ahmad',
+            'doChat': true,
+            'doTracking': true,
+          });
+        `}
+        </Script>
       </Head>
       <Header />
       <Main projects={projects} />
