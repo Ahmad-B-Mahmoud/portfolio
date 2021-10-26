@@ -4,6 +4,7 @@ import Script from 'next/script'
 import Main from '../components/layouts/Main'
 //import Footer from '../components/layouts/Footer'
 import {prepr} from '../lib/prepr'
+import { Container } from '@mui/material'
 
 export default function Home({ projects }) {
   return (
@@ -26,17 +27,19 @@ export default function Home({ projects }) {
         src="https://www.momentcrm.com/embed"
         strategy="beforeInteractive"
       />
-        <Script id="momentcrm">
-          {`
-          MomentCRM('init', {
-            'teamVanityId': 'ahmad',
-            'doChat': true,
-            'doTracking': true,
-          })
-        `}
-        </Script>
-      <Header />
-      <Main projects={projects} />
+      <Script id="momentcrm">
+        {`
+        MomentCRM('init', {
+          'teamVanityId': 'ahmad',
+          'doChat': true,
+          'doTracking': true,
+        })
+      `}
+      </Script>
+      <Container fluid maxWidth="xl">
+        <Header />
+        <Main projects={projects} />
+      </Container>
     </div>
   )
 }
