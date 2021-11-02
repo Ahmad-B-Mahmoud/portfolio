@@ -8,17 +8,17 @@ function Header() {
   return (
     <>
       <Grid container direction="row-reverse" alignItems="center" style={{marginTop: '4rem'}}>
-        <Grid item sm={6}>
-          <Image src={profilePic} placeholder="blur" alt="me" />
+        <Grid item lg={6}>
+          <Image src={profilePic} placeholder="blur" alt="me" priority />
         </Grid>
-        <Grid item sm={6}>
+        <Grid item lg={6}>
           <Typography 
             variant="h1" 
             color="primary" 
             component="div" 
             textAlign="center"
             sx={{
-              fontSize: '5rem',
+              fontSize: '4rem',
               fontFamily: 'Merienda',
               mb: '1rem'
             }}
@@ -31,7 +31,7 @@ function Header() {
             component="div" 
             textAlign="center"
             sx={{
-              fontSize: '3rem',
+              fontSize: '2.5rem',
               fontFamily: 'Merienda',
               mb: '2rem',
             }}

@@ -36,7 +36,7 @@ export default function Home({ projects }) {
         })
       `}
       </Script>
-      <Container fluid maxWidth="xl">
+      <Container fluid="true" maxWidth="xl">
         <Header />
         <Main projects={projects} />
       </Container>

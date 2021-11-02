@@ -14,18 +14,15 @@ function Project({ project }) {
         mt: "4rem"
       }}
     >
-      <Grid item sm={7}>
-        <Container>
-          <Image 
-            src={project.thumbnail[0].url} 
-            alt={`${project.title} Screenshot.`} 
-            height={project.thumbnail[0].height} 
-            width={project.thumbnail[0].width} 
-            layout="responsive"
-          />
-        </Container>
+      <Grid item lg={7}>
+        <Image 
+          src={project.thumbnail[0].url} 
+          alt={`${project.title} Screenshot.`} 
+          height={project.thumbnail[0].height} 
+          width={project.thumbnail[0].width} 
+        />
       </Grid>
-      <Grid item sm={4}>
+      <Grid item lg={4}>
         <Card className="glassmorph">
           <CardHeader
             avatar={

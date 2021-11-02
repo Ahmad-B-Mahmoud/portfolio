@@ -15,10 +15,10 @@ function Main({ projects }) {
           mt: "4rem"
         }}
       >
-        <Grid item sm={4}>
+        <Grid item sm={6}>
           <Image src={appIcon} alt="Projects Icon (Illustration)" />
         </Grid>
-        <Grid item sm={5}>
+        <Grid item sm={6}>
           <Typography 
             variant="h3" 
             component='div' 
